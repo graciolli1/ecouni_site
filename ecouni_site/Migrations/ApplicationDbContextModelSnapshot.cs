@@ -8,7 +8,7 @@ using ecouni_site.Data;
 
 #nullable disable
 
-namespace ecouni_site.Data.Migrations
+namespace ecouni_site.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
     partial class ApplicationDbContextModelSnapshot : ModelSnapshot

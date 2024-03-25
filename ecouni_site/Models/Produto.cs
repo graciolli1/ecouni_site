@@ -10,12 +10,13 @@ namespace ecouni_site.Models
 
         [Required]
         [Range(0.01, double.MaxValue)]
+        [DataType(DataType.Currency)]
+        [Display(Name = "Preço")]
         public decimal Preco { get; set; }
 
         [Required]
         //[MaxLength(100)]   //Trucamento
         [StringLength(100)] //Exception
-        [DataType(DataType.Currency)]
         public string Nome { get; set; }
 
         public virtual Categoria? Categoria { get; set; }
